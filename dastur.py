@@ -24,10 +24,24 @@ os.system("cls")
 #     print("No")
 
 
-fruits = ("apple",'banana','peach','melon','kivi')
+# fruits = ("apple",'banana','peach','melon','kivi')
 
 # for i in range(len(fruits)):
 #     print(fruits[i])
 
-for i in fruits:
-    print(i)
+# for i in fruits:
+#     print(i)
+
+# fruits = ("apple",'banana','peach','melon','kivi')
+# fruits2 = ('pear', 'cherry', 'watermelon')
+
+# fruits3 = fruits + fruits2
+# print(fruits3)
+
+
+tuple1 = (1,2,3,4,5,6,7,8,9)
+# a = tuple1[0]
+# b = tuple1[1]
+# c = tuple1[2]
+a,b,*c = tuple1
+print(a,b,c)
