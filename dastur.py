@@ -17,8 +17,17 @@ os.system("cls")
 # print(tuple1[::-1])
 
 
+# fruits = ("apple",'banana','peach','melon','kivi')
+# if "banana" in fruits:
+#     print("Yes")
+# else:
+#     print("No")
+
+
 fruits = ("apple",'banana','peach','melon','kivi')
-if 'banana' in fruits:
-    print("Yes")
-else:
-    print("No")
+
+# for i in range(len(fruits)):
+#     print(fruits[i])
+
+for i in fruits:
+    print(i)
