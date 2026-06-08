@@ -1,0 +1,15 @@
+class Student:
+    ism = "Alisher"
+    familya = "Abdullayev"
+    manzil = "Toshkent"
+    yosh = 42
+
+# print(ism)
+s1 = Student()
+s1.baho = 3
+s1.ism = "Bobur"
+print(s1.ism)
+print(s1.baho)
+
+s1.manzil += " shahar, Uchtepa"
+print(s1.manzil)
