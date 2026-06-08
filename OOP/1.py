@@ -13,3 +13,14 @@ print(s1.baho)
 
 s1.manzil += " shahar, Uchtepa"
 print(s1.manzil)
+
+a = 12
+b = 3.5
+c = "hello"
+d = [1,2,3]
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(s1))
