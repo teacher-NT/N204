@@ -33,14 +33,25 @@ class School:
 
     def __truediv__(self, n):
         self.raqam /= n
+
+    def __mod__(self, n):
+        m = self.soni / 100 * n
+        print(f"{n} foizi {m} ta")
+
+    def __len__(self):
+        return len(self.manzil)
     
 s1 = School("Chilonzor", 2000, 78, "O'zbek tili")
 # print(s1 > 5000)
 # print(s1 < 500, s1.soni < 500)
 # print(s1 == 2000)
 
-s1 + 100
-s1 - 2000
-s1 * 2
-s1 / 3
-print(s1)
+# s1 + 100
+# s1 - 2000
+# s1 * 2
+# s1 / 3
+
+# s1 % 25
+# print(s1)
+
+print(len(s1))
