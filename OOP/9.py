@@ -22,7 +22,25 @@ class School:
     def __eq__(self, n):
         return self.soni == n
     
+    def __add__(self, n):
+        self.soni += n
+
+    def __sub__(self, n):
+        self.soni -= n
+
+    def __mul__(self, n):
+        self.raqam *= n
+
+    def __truediv__(self, n):
+        self.raqam /= n
+    
 s1 = School("Chilonzor", 2000, 78, "O'zbek tili")
-print(s1 > 5000)
-print(s1 < 500, s1.soni < 500)
-print(s1 == 2000)
+# print(s1 > 5000)
+# print(s1 < 500, s1.soni < 500)
+# print(s1 == 2000)
+
+s1 + 100
+s1 - 2000
+s1 * 2
+s1 / 3
+print(s1)
