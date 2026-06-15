@@ -2,9 +2,10 @@ import os
 os.system("cls")
 
 class BankAccount:
-    def __init__(self, n, b):
+    def __init__(self, n, b, p):
         self.name = n
         self.__balans = b
+        self._parol = p
     
     def get_balans(self, parol):
         if parol == 'qwerty':
@@ -19,8 +20,9 @@ class BankAccount:
         else:
             print("Parol xato") 
 
-b1 = BankAccount("Husan", 12000)
+b1 = BankAccount("Husan", 12000, "qwerty")
 print(b1.name)
+print(b1._parol)
 # b1.get_balans("12345678")
 # b1.get_balans("qwerty")
 # print(b1.__balans)
