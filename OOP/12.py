@@ -1,29 +1,29 @@
 import os
 os.system("cls")
 
-class Person:
-    def __init__(self, i, y, m):
-        self.ism = i
-        self.yosh = y
-        self.manzil = m
-
-    def __gt__(self, n):
-        return self.yosh > n
+class BankAccount:
+    def __init__(self, n, b):
+        self.name = n
+        self.__balans = b
     
-
-class Worker:
-    def __init__(self,i,y,m,l,maosh):
-        self.ism = i
-        self.yosh = y
-        self.manzil = m
-        self.lavozim = l
-        self.maosh = maosh
+    def get_balans(self, parol):
+        if parol == 'qwerty':
+            print(self.__balans)
+        else:
+            print("Parol xato.")
     
-    def __gt__(self, n):
-        return self.maosh > n
+    def hisob_yangilash(self, parol, yangi):
+        if parol == '1122':
+            self.__balans += yangi
+            print("Balans o'zgardi")
+        else:
+            print("Parol xato") 
 
-w1 = Worker("Husan", 22, "Samarqand", "Manager", 500)
-print(w1 > 100)
+b1 = BankAccount("Husan", 12000)
+print(b1.name)
+# b1.get_balans("12345678")
+# b1.get_balans("qwerty")
+# print(b1.__balans)
 
-p1 = Person('Saidaloxon', 15, "Toshkent")
-print(p1 > 18)
+b1.hisob_yangilash("1122", 5000)
+b1.get_balans("qwerty")
