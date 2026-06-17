@@ -32,3 +32,5 @@ class Ironman(Player):
 i1 = Ironman()
 i1.fly()
 i1.run()
+
+23402000300100001010
