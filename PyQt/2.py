@@ -1,6 +1,10 @@
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QLabel
 )
+from PyQt5.QtGui import QFont
+
+font1 = QFont("Comic Sans MS", 30)
+font2 = QFont("Gabriola", 30)
 
 app = QApplication([])
 
@@ -11,10 +15,11 @@ oyna.setStyleSheet("background-color: #8cd9fa;")
 
 text1 = QLabel(oyna)
 text1.setText("Bu birinchi matn")
-text1.setStyleSheet("""font-size: 30px; 
+text1.setStyleSheet("""
                     color: green; 
                     font-weight: bold;
                     """)
+text1.setFont(font2)
 text1.move(70, 10)
 
 oyna.show()
